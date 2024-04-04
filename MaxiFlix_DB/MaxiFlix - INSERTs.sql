@@ -1,5 +1,7 @@
 USE MaxiFlix_DB
 
+SET LANGUAGE Spanish;
+
 	-- Carga de Datos
 
 -- Tabla: Usuarios
@@ -15,39 +17,39 @@ PRINT 'SE AGREGARON 4 USUARIOS'
 -- Tabla: Clasificaciones
 INSERT INTO Clasificaciones (Descripcion)
 VALUES
-('G (Apta para todos los p˙blicos)'),
-('PG (Se sugiere la guÌa de los padres)'),
-('PG-13 (Se sugiere la guÌa de los padres para menores de 13 aÒos)'),
-('R (Restringida: se requiere compaÒÌa de un adulto para menores de 17 aÒos)'),
-('NC-17 (No apta para menores de 17 aÒos)'),
-('TV-Y (Apta para todos los niÒos)'),
-('TV-Y7 (Apta para niÒos mayores de 7 aÒos)'),
-('TV-G (Apta para todos los p˙blicos)'),
-('TV-PG (Se sugiere la guÌa de los padres)'),
-('TV-14 (Se sugiere la guÌa de los padres para menores de 14 aÒos)'),
-('TV-MA (Programa maduro: puede no ser adecuado para menores de 17 aÒos)');
+('G (Apta para todos los p√∫blicos)'),
+('PG (Se sugiere la gu√≠a de los padres)'),
+('PG-13 (Se sugiere la gu√≠a de los padres para menores de 13 a√±os)'),
+('R (Restringida: se requiere compa√±√≠a de un adulto para menores de 17 a√±os)'),
+('NC-17 (No apta para menores de 17 a√±os)'),
+('TV-Y (Apta para todos los ni√±os)'),
+('TV-Y7 (Apta para ni√±os mayores de 7 a√±os)'),
+('TV-G (Apta para todos los p√∫blicos)'),
+('TV-PG (Se sugiere la gu√≠a de los padres)'),
+('TV-14 (Se sugiere la gu√≠a de los padres para menores de 14 a√±os)'),
+('TV-MA (Programa maduro: puede no ser adecuado para menores de 17 a√±os)');
 
 PRINT 'SE AGREGARON 11 TIPOS DE CLASIFICACIONES'
 
 -- Tabla: Categorias
 INSERT INTO Categorias (Descripcion)
 VALUES
-('AcciÛn'), ('Aventura'), ('Comedia'), ('Drama'), ('Terror'), ('Ciencia ficciÛn'),
-('FantasÌa'), ('Romance'), ('AnimaciÛn'), ('Documental'), ('Thriller'), ('Crimen'),
-('Misterio'), ('Suspenso'), ('Western'), ('Musical'), ('HistÛrico'), ('Guerra'),
-('BiografÌa'), ('Deportes'), ('Familia'), ('Adolescente'), ('Cine negro'),
-('Cine independiente'), ('Experimental'), ('Serie'), ('SuperhÈroes');
+('Acci√≥n'), ('Aventura'), ('Comedia'), ('Drama'), ('Terror'), ('Ciencia ficci√≥n'),
+('Fantas√≠a'), ('Romance'), ('Animaci√≥n'), ('Documental'), ('Thriller'), ('Crimen'),
+('Misterio'), ('Suspenso'), ('Western'), ('Musical'), ('Hist√≥rico'), ('Guerra'),
+('Biograf√≠a'), ('Deportes'), ('Familia'), ('Adolescente'), ('Cine negro'),
+('Cine independiente'), ('Experimental'), ('Serie'), ('Superh√©roes');
 
 PRINT 'SE AGREGARON 27 TIPOS DE CATEGORIAS'
 
--- Tabla: GÈneros
+-- Tabla: G√©neros
 INSERT INTO Generos (Descripcion)
 VALUES
-('Drama TV'), ('PelÌculas de acciÛn y aventura'), ('Comedias rom·nticas'),
-('Documentales polÌticos'), ('Thrillers psicolÛgicos'), ('Programas de comida y viajes'),
-('PelÌculas cl·sicas'), ('Ciencia ficciÛn y fantasÌa'), ('Programas de realidad'),
-('Series de crimen'), ('PelÌculas familiares'), ('Anime'), ('PelÌculas de terror'),
-('Dramas rom·nticos'), ('Comedias de situaciÛn');
+('Drama TV'), ('Pel√≠culas de acci√≥n y aventura'), ('Comedias rom√°nticas'),
+('Documentales pol√≠ticos'), ('Thrillers psicol√≥gicos'), ('Programas de comida y viajes'),
+('Pel√≠culas cl√°sicas'), ('Ciencia ficci√≥n y fantas√≠a'), ('Programas de realidad'),
+('Series de crimen'), ('Pel√≠culas familiares'), ('Anime'), ('Pel√≠culas de terror'),
+('Dramas rom√°nticos'), ('Comedias de situaci√≥n');
 
 PRINT 'SE AGREGARON 15 TIPOS DE GENEROS'
 
@@ -70,20 +72,20 @@ PRINT 'SE AGREGARON 10 PLATAFORMAS DE STREAMING'
 -- Tabla: Media.Tipos
 INSERT INTO [Media.Tipos] (Id, Descripcion)
 VALUES
-(1, 'Video'), (2, 'Im·genes'), (3, 'Audio'), (4, 'Texto'), (5, 'Gr·ficos y animaciones');
+(1, 'Video'), (2, 'Im√°genes'), (3, 'Audio'), (4, 'Texto'), (5, 'Gr√°ficos y animaciones');
 
 PRINT 'SE AGREGARON 5 TIPOS DE FORMATOS MULTIMEDIA'
 
 -- Tabla: Paises
 INSERT INTO Paises (Nombre)
 VALUES
-('Argentina'), ('Brasil'), ('Chile'), ('Per˙'), ('Colombia'), ('Ecuador'),
+('Argentina'), ('Brasil'), ('Chile'), ('Per√∫'), ('Colombia'), ('Ecuador'),
 ('Venezuela'), ('Bolivia'), ('Uruguay'), ('Paraguay'), ('Estados Unidos'),
-('Canad·'), ('MÈxico'), ('EspaÒa'), ('Portugal'), ('Francia'), ('Italia'),
-('Alemania'), ('Reino Unido'), ('Irlanda'), ('Holanda'), ('BÈlgica'),
+('Canad√°'), ('M√©xico'), ('Espa√±a'), ('Portugal'), ('Francia'), ('Italia'),
+('Alemania'), ('Reino Unido'), ('Irlanda'), ('Holanda'), ('B√©lgica'),
 ('Suiza'), ('Suecia'), ('Noruega'), ('Dinamarca'), ('Finlandia'),
-('Grecia'), ('TurquÌa'), ('Egipto'), ('Sud·frica'), ('Nigeria'),
-('Kenia'), ('India'), ('China'), ('JapÛn'), ('Corea del Sur'),
+('Grecia'), ('Turqu√≠a'), ('Egipto'), ('Sud√°frica'), ('Nigeria'),
+('Kenia'), ('India'), ('China'), ('Jap√≥n'), ('Corea del Sur'),
 ('Australia'), ('Nueva Zelanda'), ('Indonesia'), ('Malasia'),
 ('Tailandia'), ('Vietnam'), ('Singapur'), ('Filipinas');
 
@@ -122,7 +124,7 @@ VALUES ('Clark', 'Gregg', 11, '1962-04-02', 'https://static.wikia.nocookie.net/m
 
 -- Tabla: Peliculas
 INSERT INTO Peliculas (FechaEstreno, Titulo, MinutosDuracion, Bio)
-VALUES ('2012-05-04', 'Avengers: Assemble', 143, 'Los superhÈroes de Marvel, incluidos Iron Man, Capit·n AmÈrica, Hulk, Thor, Black Widow y Hawkeye, se unen para salvar al mundo del villano Loki y su ejÈrcito.');
+VALUES ('2012-05-04', 'Avengers: Assemble', 143, 'Los superh√©roes de Marvel, incluidos Iron Man, Capit√°n Am√©rica, Hulk, Thor, Black Widow y Hawkeye, se unen para salvar al mundo del villano Loki y su ej√©rcito.');
 
 -- Tabla: Media
 INSERT INTO	Media (IdPelicula, MediaURL, IdTipo)
@@ -188,7 +190,7 @@ VALUES (1, 2, '2022-12-18');
 INSERT INTO [Usuarios.Favoritos] (IdPelicula, IdUsuario, FechaFavorito)
 VALUES (1, 1, '2024-02-02');
 
-PRINT 'SE AGREG” LA PELICULA "AVENGERS: ASSEMBLE"'
+PRINT 'SE AGREG√ì LA PELICULA "AVENGERS: ASSEMBLE"'
 -- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ----------- IRON MAN 1 -----------
@@ -205,7 +207,7 @@ VALUES ('Gwyneth', 'Paltrow', 11, '1972-09-27', 'https://upload.wikimedia.org/wi
 
 -- Tabla: Peliculas
 INSERT INTO Peliculas (FechaEstreno, Titulo, MinutosDuracion, Bio, IdDirector)
-VALUES ('2018-04-30', 'Iron Man', 126, 'DespuÈs de sobrevivir a un ataque inesperado en territorio enemigo, el empresario industrial de vida glamorosa, Tony Stark, construye un traje de alta tecnologÌa y jura proteger al mundo como Iron Man.', 11);
+VALUES ('2018-04-30', 'Iron Man', 126, 'Despu√©s de sobrevivir a un ataque inesperado en territorio enemigo, el empresario industrial de vida glamorosa, Tony Stark, construye un traje de alta tecnolog√≠a y jura proteger al mundo como Iron Man.', 11);
 
 -- Tabla: Media
 INSERT INTO	Media (IdPelicula, MediaURL, IdTipo)
@@ -263,7 +265,7 @@ VALUES (6, 2, 0);
 INSERT INTO [Usuarios.Favoritos] (IdPelicula, IdUsuario, FechaFavorito)
 VALUES (2, 2, '2023-06-29');
 
-PRINT 'SE AGREG” LA PELICULA "IRON MAN"'
+PRINT 'SE AGREG√ì LA PELICULA "IRON MAN"'
 -- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ----------- Rocky -----------
@@ -284,7 +286,7 @@ VALUES ('Tony', 'Burton', 11, '1937-03-23', 'https://encrypted-tbn0.gstatic.com/
 
 -- Tabla: Peliculas
 INSERT INTO Peliculas (FechaEstreno, Titulo, MinutosDuracion, Bio, IdDirector)
-VALUES ('1976-12-03', 'Rocky', 119, 'Un boxeador desconocido de Filadelfia que recibe la oportunidad de su vida al enfrentarse al campeÛn mundial Apollo Creed. Con determinaciÛn y corazÛn, Rocky se prepara para el desafÌo de su vida, luchando tanto dentro como fuera del ring mientras persigue su sueÒo de grandeza.', 15);
+VALUES ('1976-12-03', 'Rocky', 119, 'Un boxeador desconocido de Filadelfia que recibe la oportunidad de su vida al enfrentarse al campe√≥n mundial Apollo Creed. Con determinaci√≥n y coraz√≥n, Rocky se prepara para el desaf√≠o de su vida, luchando tanto dentro como fuera del ring mientras persigue su sue√±o de grandeza.', 15);
 
 -- Tabla: Media
 INSERT INTO	Media (IdPelicula, MediaURL, IdTipo)
@@ -342,7 +344,7 @@ VALUES (19, 3, 0);
 INSERT INTO [Peliculas.Reparto] (IdReparto, IdPelicula, Protagonista)
 VALUES (20, 3, 0);
 
-PRINT 'SE AGREG” LA PELICULA "ROCKY"'
+PRINT 'SE AGREG√ì LA PELICULA "ROCKY"'
 -- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ----------- Doom: La Puerta del Infierno -----------
@@ -361,7 +363,7 @@ VALUES ('Ben', 'Daniels', 19, '1964-06-10', 'https://resizing.flixster.com/-XZAf
 
 -- Tabla: Peliculas
 INSERT INTO Peliculas (FechaEstreno, Titulo, MinutosDuracion, Bio)
-VALUES ('2005-11-03', 'Doom: La Puerta del Infierno', 105, 'Dos soldados utilizan artillerÌa pesada para enfrentar a mutantes en un laboratorio de alta tecnologÌa en Marte.');
+VALUES ('2005-11-03', 'Doom: La Puerta del Infierno', 105, 'Dos soldados utilizan artiller√≠a pesada para enfrentar a mutantes en un laboratorio de alta tecnolog√≠a en Marte.');
 
 -- Tabla: Media
 INSERT INTO	Media (IdPelicula, MediaURL, IdTipo)
@@ -413,10 +415,10 @@ VALUES (24, 4, 0);
 INSERT INTO [Peliculas.Reparto] (IdReparto, IdPelicula, Protagonista)
 VALUES (25, 4, 0);
 
-PRINT 'SE AGREG” LA PELICULA "DOOM: LA PUERTA DEL INFIERNO"'
+PRINT 'SE AGREG√ì LA PELICULA "DOOM: LA PUERTA DEL INFIERNO"'
 -- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
------------ Doom: AniquilaciÛn -----------
+----------- Doom: Aniquilaci√≥n -----------
 
 -- Tabla: Reparto
 INSERT INTO Reparto (Nombre, Apellido, IdNacionalidad, FechaNacimiento, ImagenURL, Dirige)
@@ -430,7 +432,7 @@ VALUES ('Louis', 'Mandylor', 38, '1966-09-13', 'https://pics.filmaffinity.com/10
 
 -- Tabla: Peliculas
 INSERT INTO Peliculas (FechaEstreno, Titulo, MinutosDuracion, Bio)
-VALUES ('2019-05-17', 'Doom: Aniquilacion', 96, 'Un grupo de soldados responde a la llamada de emergencia de una base cientÌfica secreta ubicada en una de las lunas de Marte. Al llegar, descubren que la base fue invadida por extraterrestres.');
+VALUES ('2019-05-17', 'Doom: Aniquilacion', 96, 'Un grupo de soldados responde a la llamada de emergencia de una base cient√≠fica secreta ubicada en una de las lunas de Marte. Al llegar, descubren que la base fue invadida por extraterrestres.');
 
 -- Tabla: Media
 INSERT INTO	Media (IdPelicula, MediaURL, IdTipo)
@@ -474,7 +476,7 @@ VALUES (28, 5, 0);
 INSERT INTO [Peliculas.Reparto] (IdReparto, IdPelicula, Protagonista)
 VALUES (29, 5, 0);
 
-PRINT 'SE AGREG” LA PELICULA "DOOM: ANIQUILACI”N"'
+PRINT 'SE AGREG√ì LA PELICULA "DOOM: ANIQUILACI√ìN"'
 -- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ----------- Volver al Futuro -----------
@@ -493,7 +495,7 @@ VALUES ('Thomas F.', 'Wilson', 11, '1959-04-15', 'https://media.themoviedb.org/t
 
 -- Tabla: Peliculas
 INSERT INTO Peliculas (FechaEstreno, Titulo, MinutosDuracion, Bio)
-VALUES ('1985-12-26', 'Volver al Futuro', 116, 'Una m·quina del tiempo transporta a un adolescente a los aÒos 50, cuando sus padres todavÌa estudiaban en la secundaria.');
+VALUES ('1985-12-26', 'Volver al Futuro', 116, 'Una m√°quina del tiempo transporta a un adolescente a los a√±os 50, cuando sus padres todav√≠a estudiaban en la secundaria.');
 
 -- Tabla: Media
 INSERT INTO	Media (IdPelicula, MediaURL, IdTipo)
@@ -547,7 +549,7 @@ VALUES (33, 6, 0);
 INSERT INTO [Peliculas.Reparto] (IdReparto, IdPelicula, Protagonista)
 VALUES (34, 6, 0);
 
-PRINT 'SE AGREG” LA PELICULA "VOLVER AL FUTURO"'
+PRINT 'SE AGREG√ì LA PELICULA "VOLVER AL FUTURO"'
 -- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ----------- Los Intocables -----------
@@ -558,7 +560,7 @@ VALUES ('Kevin', 'Costner', 11, '1955-01-18', 'https://images.mubicdn.net/images
 INSERT INTO Reparto (Nombre, Apellido, IdNacionalidad, FechaNacimiento, ImagenURL, Dirige)
 VALUES ('Sean', 'Connery', 19, '1930-08-25', 'https://images.mubicdn.net/images/cast_member/3208/cache-1797-1619807182/image-w856.jpg?size=800x', 0);
 INSERT INTO Reparto (Nombre, Apellido, IdNacionalidad, FechaNacimiento, ImagenURL, Dirige)
-VALUES ('Andy', 'GarcÌa', 11, '1956-04-12', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTos71H6DIIGG-8wU92cDPfyhpBbVmNiLrTZ1jTIvvHQ_MlpXNKDyeN_FR0IR8aNLZHwvk&usqp=CAU', 0);
+VALUES ('Andy', 'Garc√≠a', 11, '1956-04-12', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTos71H6DIIGG-8wU92cDPfyhpBbVmNiLrTZ1jTIvvHQ_MlpXNKDyeN_FR0IR8aNLZHwvk&usqp=CAU', 0);
 INSERT INTO Reparto (Nombre, Apellido, IdNacionalidad, FechaNacimiento, ImagenURL, Dirige)
 VALUES ('Robert', 'De Niro', 11, '1943-08-17', 'https://hips.hearstapps.com/hmg-prod/images/robert-de-niro-attends-the-cinemacon-big-screen-achievement-news-photo-1660730297.jpg?crop=0.667xw:1.00xh;0.0828xw,0&resize=1200:*', 0);
 INSERT INTO Reparto (Nombre, Apellido, IdNacionalidad, FechaNacimiento, ImagenURL, Dirige)
@@ -618,7 +620,7 @@ VALUES (39, 7, 1);
 INSERT INTO [Peliculas.Reparto] (IdReparto, IdPelicula, Protagonista)
 VALUES (40, 7, 0);
 
-PRINT 'SE AGREG” LA PELICULA "LOS INTOCABLES"'
+PRINT 'SE AGREG√ì LA PELICULA "LOS INTOCABLES"'
 -- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ----------- Thor: Love & Thunder -----------
@@ -635,7 +637,7 @@ VALUES ('Tessa', 'Thompson', 11, '1983-10-03', 'https://static.wikia.nocookie.ne
 
 -- Tabla: Peliculas
 INSERT INTO Peliculas (FechaEstreno, Titulo, MinutosDuracion, Bio, IdDirector)
-VALUES ('2022-07-06', 'Thor: Love & Thunder', 119, 'Thor est· buscando la paz interior, pero la irrupciÛn de Gorr, el asesino de dioses, le obliga a volver al combate. Thor recluta a la Reina Valkiria, Korg y su exnovia, Jane Foster, para que lo ayuden a evitar la extinciÛn de los dioses.', 43);
+VALUES ('2022-07-06', 'Thor: Love & Thunder', 119, 'Thor est√° buscando la paz interior, pero la irrupci√≥n de Gorr, el asesino de dioses, le obliga a volver al combate. Thor recluta a la Reina Valkiria, Korg y su exnovia, Jane Foster, para que lo ayuden a evitar la extinci√≥n de los dioses.', 43);
 
 -- Tabla: Media
 INSERT INTO	Media (IdPelicula, MediaURL, IdTipo)
@@ -689,7 +691,7 @@ VALUES (43, 8, 0);
 INSERT INTO [Peliculas.Reparto] (IdReparto, IdPelicula, Protagonista)
 VALUES (44, 8, 0);
 
-PRINT 'SE AGREG” LA PELICULA "THOR: LOVE & THUNDER"'
+PRINT 'SE AGREG√ì LA PELICULA "THOR: LOVE & THUNDER"'
 -- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ----------- Karate Kid -----------
@@ -708,7 +710,7 @@ VALUES ('Martin', 'Kove', 19, '1946-03-06', 'https://depor.com/resizer/TJqJysRCK
 
 -- Tabla: Peliculas
 INSERT INTO Peliculas (FechaEstreno, Titulo, MinutosDuracion, Bio)
-VALUES ('1984-07-05', 'Karate Kid', 126, 'ReciÈn llegado a California, Daniel tiene problemas con una banda de karatekas. El seÒor Miyagi le enseÒar· la esencia de las artes marciales.');
+VALUES ('1984-07-05', 'Karate Kid', 126, 'Reci√©n llegado a California, Daniel tiene problemas con una banda de karatekas. El se√±or Miyagi le ense√±ar√° la esencia de las artes marciales.');
 
 -- Tabla: Media
 INSERT INTO	Media (IdPelicula, MediaURL, IdTipo)
@@ -756,7 +758,7 @@ VALUES (48, 9, 0);
 INSERT INTO [Peliculas.Reparto] (IdReparto, IdPelicula, Protagonista)
 VALUES (49, 9, 0);
 
-PRINT 'SE AGREG” LA PELICULA "KARATE KID"'
+PRINT 'SE AGREG√ì LA PELICULA "KARATE KID"'
 -- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ----------- Robocop -----------
@@ -777,7 +779,7 @@ VALUES ('Ronny', 'Cox', 11, '1938-07-23', 'https://es.web.img3.acsta.net/medias/
 
 -- Tabla: Peliculas
 INSERT INTO Peliculas (FechaEstreno, Titulo, MinutosDuracion, Bio)
-VALUES ('1987-09-17', 'Robocop', 102, 'Un grupo de cientÌficos utiliza los restos destrozados de un policÌa muerto para crear al mejor luchador contra el crimen: un robot indestructible. El experimento parece un Èxito, pero el policÌa, a pesar de estar muerto, conserva la memoria y decide vengarse de sus asesinos.');
+VALUES ('1987-09-17', 'Robocop', 102, 'Un grupo de cient√≠ficos utiliza los restos destrozados de un polic√≠a muerto para crear al mejor luchador contra el crimen: un robot indestructible. El experimento parece un √©xito, pero el polic√≠a, a pesar de estar muerto, conserva la memoria y decide vengarse de sus asesinos.');
 
 -- Tabla: Media
 INSERT INTO	Media (IdPelicula, MediaURL, IdTipo)
@@ -833,10 +835,10 @@ VALUES (54, 10, 0);
 INSERT INTO [Peliculas.Reparto] (IdReparto, IdPelicula, Protagonista)
 VALUES (55, 10, 0);
 
-PRINT 'SE AGREG” LA PELICULA "ROBOCOP"'
+PRINT 'SE AGREG√ì LA PELICULA "ROBOCOP"'
 -- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
------------ El ˙ltimo de los Mohicanos -----------
+----------- El √∫ltimo de los Mohicanos -----------
 
 INSERT INTO Reparto (Nombre, Apellido, IdNacionalidad, FechaNacimiento, ImagenURL, Dirige)
 VALUES ('Daniel', 'Day-Lewis', 19, '1957-04-29', 'https://hips.hearstapps.com/hmg-prod/images/daniel-day-lewis-fotogramas-1619707012.jpg?crop=0.665xw:1.00xh;0.301xw,0&resize=1200:*', 0);
@@ -853,7 +855,7 @@ VALUES ('Russell', 'Means', 11, '1939-11-10', 'https://cdn.britannica.com/90/163
 
 -- Tabla: Peliculas
 INSERT INTO Peliculas (FechaEstreno, Titulo, MinutosDuracion, Bio)
-VALUES ('1993-03-18', 'El ⁄ltimo de los Mohicanos', 112, 'El guÌa colonial Hawkeye, con sus amigos indÌgenas, Chingachgook y Uncas, rescatan a unas hermanas brit·nicas del HurÛn para llevarlas con su padre, el comandante del Fuerte William Henry.');
+VALUES ('1993-03-18', 'El √öltimo de los Mohicanos', 112, 'El gu√≠a colonial Hawkeye, con sus amigos ind√≠genas, Chingachgook y Uncas, rescatan a unas hermanas brit√°nicas del Hur√≥n para llevarlas con su padre, el comandante del Fuerte William Henry.');
 
 -- Tabla: Media
 INSERT INTO	Media (IdPelicula, MediaURL, IdTipo)
@@ -899,7 +901,7 @@ VALUES (60, 11, 1);
 INSERT INTO [Peliculas.Reparto] (IdReparto, IdPelicula, Protagonista)
 VALUES (61, 11, 0);
 
-PRINT 'SE AGREG” LA PELICULA "EL ⁄LTIMO DE LOS MOHICANOS"'
+PRINT 'SE AGREG√ì LA PELICULA "EL √öLTIMO DE LOS MOHICANOS"'
 -- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ----------- Spiderman -----------
@@ -918,7 +920,7 @@ VALUES ('J. K.', 'Simmons', 11, '1955-01-09', 'https://s3.amazonaws.com/arc-word
 
 -- Tabla: Peliculas
 INSERT INTO Peliculas (FechaEstreno, Titulo, MinutosDuracion, Bio)
-VALUES ('2002-05-15', 'Spiderman', 121, 'Luego de sufrir la picadura de una araÒa genÈticamente modificada, un estudiante de secundaria tÌmido y torpe adquiere increÌbles capacidades como ar·cnido. Pronto comprender· que su misiÛn es utilizarlas para luchar contra el mal y defender a sus vecinos.');
+VALUES ('2002-05-15', 'Spiderman', 121, 'Luego de sufrir la picadura de una ara√±a gen√©ticamente modificada, un estudiante de secundaria t√≠mido y torpe adquiere incre√≠bles capacidades como ar√°cnido. Pronto comprender√° que su misi√≥n es utilizarlas para luchar contra el mal y defender a sus vecinos.');
 
 -- Tabla: Media
 INSERT INTO	Media (IdPelicula, MediaURL, IdTipo)
@@ -976,7 +978,7 @@ VALUES (65, 12, 0);
 INSERT INTO [Peliculas.Reparto] (IdReparto, IdPelicula, Protagonista)
 VALUES (66, 12, 0);
 
-PRINT 'SE AGREG” LA PELICULA "SPIDERMAN"'
+PRINT 'SE AGREG√ì LA PELICULA "SPIDERMAN"'
 -- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ----------- Logan -----------
@@ -997,7 +999,7 @@ VALUES ('Richard E.', 'Grant', 19, '1957-05-05', 'https://resizing.flixster.com/
 
 -- Tabla: Peliculas
 INSERT INTO Peliculas (FechaEstreno, Titulo, MinutosDuracion, Bio)
-VALUES ('2017-03-03', 'Logan', 137, 'Han pasado los aÒos y los mutantes est·n en declive. Logan, dÈbil y cansado, vive alejado de todos hasta que acepta una ˙ltima misiÛn de Charles Xavier: la de proteger a una joven especial, de nombre Laura Kinney pero conocida como X-23, la ˙ltima esperanza de la raza mutante.');
+VALUES ('2017-03-03', 'Logan', 137, 'Han pasado los a√±os y los mutantes est√°n en declive. Logan, d√©bil y cansado, vive alejado de todos hasta que acepta una √∫ltima misi√≥n de Charles Xavier: la de proteger a una joven especial, de nombre Laura Kinney pero conocida como X-23, la √∫ltima esperanza de la raza mutante.');
 
 -- Tabla: Media
 INSERT INTO	Media (IdPelicula, MediaURL, IdTipo)
@@ -1055,7 +1057,7 @@ VALUES (71, 13, 0);
 INSERT INTO [Peliculas.Reparto] (IdReparto, IdPelicula, Protagonista)
 VALUES (72, 13, 0);
 
-PRINT 'SE AGREG” LA PELICULA "LOGAN"'
+PRINT 'SE AGREG√ì LA PELICULA "LOGAN"'
 -- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ----------- The Batman -----------
@@ -1064,7 +1066,7 @@ PRINT 'SE AGREG” LA PELICULA "LOGAN"'
 INSERT INTO Reparto (Nombre, Apellido, IdNacionalidad, FechaNacimiento, ImagenURL, Dirige)
 VALUES ('Robert', 'Pattison', 19, '1986-05-13', 'https://www.eltiempo.com/files/image_640_428/files/crop/uploads/2020/08/24/5f43ab2c4a5d7.r_1646867214498.0-180-3000-1681.jpeg', 0);
 INSERT INTO Reparto (Nombre, Apellido, IdNacionalidad, FechaNacimiento, ImagenURL, Dirige)
-VALUES ('ZoÎ', 'Kravitz', 11, '1988-12-01', 'https://media.revistavanityfair.es/photos/60e83539bb9e71d46fd8c444/master/w_1600%2Cc_limit/185611.jpg', 0);
+VALUES ('Zo√´', 'Kravitz', 11, '1988-12-01', 'https://media.revistavanityfair.es/photos/60e83539bb9e71d46fd8c444/master/w_1600%2Cc_limit/185611.jpg', 0);
 INSERT INTO Reparto (Nombre, Apellido, IdNacionalidad, FechaNacimiento, ImagenURL, Dirige)
 VALUES ('Paul', 'Dano', 11, '1984-06-19', 'https://static.wikia.nocookie.net/doblaje/images/4/45/Paul_dano_moy.jpg/revision/latest?cb=20220419194411&path-prefix=es', 1);
 INSERT INTO Reparto (Nombre, Apellido, IdNacionalidad, FechaNacimiento, ImagenURL, Dirige)
@@ -1076,7 +1078,7 @@ VALUES ('Andy', 'Serkis', 19, '1964-04-20', 'https://es.web.img3.acsta.net/pictu
 
 -- Tabla: Peliculas
 INSERT INTO Peliculas (FechaEstreno, Titulo, MinutosDuracion, Bio)
-VALUES ('2022-03-04', 'The Batman', 176, 'Batman explora la corrupciÛn existente en la ciudad de Gotham y el vÌnculo de esta con su propia familia. Adem·s, entra en conflicto con un asesino en serie conocido como "el Acertijo".');
+VALUES ('2022-03-04', 'The Batman', 176, 'Batman explora la corrupci√≥n existente en la ciudad de Gotham y el v√≠nculo de esta con su propia familia. Adem√°s, entra en conflicto con un asesino en serie conocido como "el Acertijo".');
 
 -- Tabla: Media
 INSERT INTO	Media (IdPelicula, MediaURL, IdTipo)
@@ -1130,7 +1132,7 @@ VALUES (77, 14, 0);
 INSERT INTO [Peliculas.Reparto] (IdReparto, IdPelicula, Protagonista)
 VALUES (78, 14, 0);
 
-PRINT 'SE AGREG” LA PELICULA "THE BATMAN"'
+PRINT 'SE AGREG√ì LA PELICULA "THE BATMAN"'
 -- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ----------- Five Nights at Freddy's -----------
@@ -1145,7 +1147,7 @@ VALUES ('Elizabeth', 'Lail', 11, '1992-03-25', 'https://static.wikia.nocookie.ne
 
 -- Tabla: Peliculas
 INSERT INTO Peliculas (FechaEstreno, Titulo, MinutosDuracion, Bio)
-VALUES ('2023-10-26', 'Five Nights at Freddy¥s', 110, 'Un problem·tico guardia de seguridad empieza a trabajar en la pizzerÌa Freddy Fazbear. Mientras pasa su primera noche en el trabajo, se da cuenta de que el turno de noche va a resultar aterrador.');
+VALUES ('2023-10-26', 'Five Nights at Freddy¬¥s', 110, 'Un problem√°tico guardia de seguridad empieza a trabajar en la pizzer√≠a Freddy Fazbear. Mientras pasa su primera noche en el trabajo, se da cuenta de que el turno de noche va a resultar aterrador.');
 
 -- Tabla: Media
 INSERT INTO	Media (IdPelicula, MediaURL, IdTipo)
@@ -1187,7 +1189,7 @@ VALUES (80, 15, 0);
 INSERT INTO [Peliculas.Reparto] (IdReparto, IdPelicula, Protagonista)
 VALUES (81, 15, 0);
 
-PRINT 'SE AGREG” LA PELICULA "FIVE NIGHTS AT FREDDY¥S"'
+PRINT 'SE AGREG√ì LA PELICULA "FIVE NIGHTS AT FREDDY¬¥S"'
 -- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ----------- Harry Potter y la Piedra Filosofal -----------
@@ -1204,7 +1206,7 @@ VALUES ('Alan', 'Rickman', 19, '1946-02-21', 'https://s2.ppllstatics.com/diarios
 
 -- Tabla: Peliculas
 INSERT INTO Peliculas (FechaEstreno, Titulo, MinutosDuracion, Bio)
-VALUES ('2001-11-16', 'Harry Potter y la Piedra Filosofal', 159, 'Harry Potter se ha quedado huÈrfano y vive en casa de sus abominables tÌos y el insoportable primo Dudley. Harry se siente muy triste y solo, hasta que un buen dÌa recibe una carta que cambiar· su vida para siempre. En ella le comunican que ha sido aceptado como alumno en el Colegio Hogwarts de Magia.');
+VALUES ('2001-11-16', 'Harry Potter y la Piedra Filosofal', 159, 'Harry Potter se ha quedado hu√©rfano y vive en casa de sus abominables t√≠os y el insoportable primo Dudley. Harry se siente muy triste y solo, hasta que un buen d√≠a recibe una carta que cambiar√° su vida para siempre. En ella le comunican que ha sido aceptado como alumno en el Colegio Hogwarts de Magia.');
 
 -- Tabla: Media
 INSERT INTO	Media (IdPelicula, MediaURL, IdTipo)
@@ -1258,7 +1260,7 @@ VALUES (84, 16, 0);
 INSERT INTO [Peliculas.Reparto] (IdReparto, IdPelicula, Protagonista)
 VALUES (85, 16, 0);
 
-PRINT 'SE AGREG” LA PELICULA "HARRY POTTER Y LA PIEDRA FILOSOFAL"'
+PRINT 'SE AGREG√ì LA PELICULA "HARRY POTTER Y LA PIEDRA FILOSOFAL"'
 -- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ----------- Mentiroso, mentiroso -----------
@@ -1271,7 +1273,7 @@ VALUES ('Jennifer', 'Tilly', 11, '1958-09-16', 'https://upload.wikimedia.org/wik
 
 -- Tabla: Peliculas
 INSERT INTO Peliculas (FechaEstreno, Titulo, MinutosDuracion, Bio)
-VALUES ('1997-05-15', 'Mentiroso, mentiroso', 86, 'Un abogado queda inhabilitado para mentir durante 24 horas, y tratar· de hacer que el mayor deseo de su hijo se cumpla.');
+VALUES ('1997-05-15', 'Mentiroso, mentiroso', 86, 'Un abogado queda inhabilitado para mentir durante 24 horas, y tratar√° de hacer que el mayor deseo de su hijo se cumpla.');
 
 -- Tabla: Media
 INSERT INTO	Media (IdPelicula, MediaURL, IdTipo)
@@ -1311,7 +1313,7 @@ VALUES (86, 17, 1);
 INSERT INTO [Peliculas.Reparto] (IdReparto, IdPelicula, Protagonista)
 VALUES (87, 17, 0);
 
-PRINT 'SE AGREG” LA PELICULA "MENTIROSO, MENTIROSO"'
+PRINT 'SE AGREG√ì LA PELICULA "MENTIROSO, MENTIROSO"'
 -- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ----------- American Pie: El Reencuentro -----------
@@ -1330,7 +1332,7 @@ VALUES ('Thomas Ian', 'Nicholas', 11, '1980-07-10', 'https://c8.alamy.com/compes
 
 -- Tabla: Peliculas
 INSERT INTO Peliculas (FechaEstreno, Titulo, MinutosDuracion, Bio)
-VALUES ('2012-04-12', 'American Pie: El Reencuentro', 114, 'Jim, Stifler y sus antiguos compaÒeros de escuela secundaria se re˙nen trece aÒos despuÈs para comprobar cÛmo han evolucionado sus vidas y, por supuesto, pasarla en grande.');
+VALUES ('2012-04-12', 'American Pie: El Reencuentro', 114, 'Jim, Stifler y sus antiguos compa√±eros de escuela secundaria se re√∫nen trece a√±os despu√©s para comprobar c√≥mo han evolucionado sus vidas y, por supuesto, pasarla en grande.');
 
 -- Tabla: Media
 INSERT INTO	Media (IdPelicula, MediaURL, IdTipo)
@@ -1376,18 +1378,18 @@ VALUES (91, 18, 0);
 INSERT INTO [Peliculas.Reparto] (IdReparto, IdPelicula, Protagonista)
 VALUES (92, 18, 0);
 
-PRINT 'SE AGREG” LA PELICULA "AMERICAN PIE: EL REENCUENTRO"'
+PRINT 'SE AGREG√ì LA PELICULA "AMERICAN PIE: EL REENCUENTRO"'
 -- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ----------- Irene, yo y mi otro yo -----------
 
 -- Tabla:Reparto
 INSERT INTO Reparto (Nombre, Apellido, IdNacionalidad, FechaNacimiento, ImagenURL, Dirige)
-VALUES ('RenÈe', 'Zellweger', 11, '1969-04-25', 'https://v.wpimg.pl/Y2FhNTY3dlMnCjhndkh7RmRSbD0wEXUQM0p0dnYFawY-Ryg9NVYrVzYHYDMrRilTMRhgJDUcOEIvRzhldlcwQTYELy12VjRQIwxhN21RaQR0Dn95P1JgAmtcezc6HmALIA1jbWkDPFEnCXtibgFgEDs', 0);
+VALUES ('Ren√©e', 'Zellweger', 11, '1969-04-25', 'https://v.wpimg.pl/Y2FhNTY3dlMnCjhndkh7RmRSbD0wEXUQM0p0dnYFawY-Ryg9NVYrVzYHYDMrRilTMRhgJDUcOEIvRzhldlcwQTYELy12VjRQIwxhN21RaQR0Dn95P1JgAmtcezc6HmALIA1jbWkDPFEnCXtibgFgEDs', 0);
 
 -- Tabla: Peliculas
 INSERT INTO Peliculas (FechaEstreno, Titulo, MinutosDuracion, Bio)
-VALUES ('2000-06-23', 'Irene, yo y mi otro yo', 116, 'Charlie es un policÌa experimentado con doble personalidad: una gentil y otra indeseable que emerge cuando no toma su medicaciÛn. Sus dos yos se enamoran de la misma mujer, a quien debe escoltar desde Rhode Island hasta Nueva York.');
+VALUES ('2000-06-23', 'Irene, yo y mi otro yo', 116, 'Charlie es un polic√≠a experimentado con doble personalidad: una gentil y otra indeseable que emerge cuando no toma su medicaci√≥n. Sus dos yos se enamoran de la misma mujer, a quien debe escoltar desde Rhode Island hasta Nueva York.');
 
 -- Tabla: Media
 INSERT INTO	Media (IdPelicula, MediaURL, IdTipo)
@@ -1425,7 +1427,7 @@ VALUES (86, 19, 1);
 INSERT INTO [Peliculas.Reparto] (IdReparto, IdPelicula, Protagonista)
 VALUES (93, 19, 0);
 
-PRINT 'SE AGREG” LA PELICULA "IRENE, YO Y MI OTRO YO"'
+PRINT 'SE AGREG√ì LA PELICULA "IRENE, YO Y MI OTRO YO"'
 -- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ----------- Gladiador -----------
@@ -1440,7 +1442,7 @@ VALUES ('Connie', 'Nielsen', 26, '1965-07-03', 'https://static.wikia.nocookie.ne
 
 -- Tabla: Peliculas
 INSERT INTO Peliculas (FechaEstreno, Titulo, MinutosDuracion, Bio)
-VALUES ('2000-05-18', 'Gladiador', 155, 'M·ximo, general romano, desea volver a casa, pero el emperador Marco Aurelio quiere que herede el imperio. Esto hace que CÛmodo ordene matar a su familia. M·ximo escapa de la muerte y regresa a Roma como gladiador para vengar la muerte de su familia.');
+VALUES ('2000-05-18', 'Gladiador', 155, 'M√°ximo, general romano, desea volver a casa, pero el emperador Marco Aurelio quiere que herede el imperio. Esto hace que C√≥modo ordene matar a su familia. M√°ximo escapa de la muerte y regresa a Roma como gladiador para vengar la muerte de su familia.');
 
 -- Tabla: Media
 INSERT INTO	Media (IdPelicula, MediaURL, IdTipo)
@@ -1484,7 +1486,7 @@ VALUES (95, 20, 0);
 INSERT INTO [Peliculas.Reparto] (IdReparto, IdPelicula, Protagonista)
 VALUES (96, 20, 0);
 
-PRINT 'SE AGREG” LA PELICULA "GLADIADOR"'
+PRINT 'SE AGREG√ì LA PELICULA "GLADIADOR"'
 -- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ----------- Hombres de negro -----------
@@ -1495,13 +1497,13 @@ VALUES ('Tommy Lee', 'Jones', 11, '1946-09-15', 'https://resizing.flixster.com/-
 INSERT INTO Reparto (Nombre, Apellido, IdNacionalidad, FechaNacimiento, ImagenURL, Dirige)
 VALUES ('Will', 'Smith', 11, '1968-09-25', 'https://pics.filmaffinity.com/187096236006906-nm_200.jpg', 0);
 INSERT INTO Reparto (Nombre, Apellido, IdNacionalidad, FechaNacimiento, ImagenURL, Dirige)
-VALUES ('Vincent', 'D¥Onofrio', 11, '1959-06-30', 'https://pics.filmaffinity.com/089167017395564-nm_200.jpg', 0);
+VALUES ('Vincent', 'D¬¥Onofrio', 11, '1959-06-30', 'https://pics.filmaffinity.com/089167017395564-nm_200.jpg', 0);
 INSERT INTO Reparto (Nombre, Apellido, IdNacionalidad, FechaNacimiento, ImagenURL, Dirige)
 VALUES ('Rip', 'Torn', 11, '1931-02-06', 'https://images.mubicdn.net/images/cast_member/8538/cache-3562-1611944170/image-w856.jpg?size=800x', 0);
 
 -- Tabla: Peliculas
 INSERT INTO Peliculas (FechaEstreno, Titulo, MinutosDuracion, Bio)
-VALUES ('1997-07-17', 'Hombres de Negro', 98, 'Los hombres de negro son el secreto mejor guardado del universo: su misiÛn es monitorear a los extraterrestres desde la Tierra.');
+VALUES ('1997-07-17', 'Hombres de Negro', 98, 'Los hombres de negro son el secreto mejor guardado del universo: su misi√≥n es monitorear a los extraterrestres desde la Tierra.');
 
 -- Tabla: Media
 INSERT INTO	Media (IdPelicula, MediaURL, IdTipo)
@@ -1551,7 +1553,7 @@ VALUES (99, 21, 0);
 INSERT INTO [Peliculas.Reparto] (IdReparto, IdPelicula, Protagonista)
 VALUES (100, 21, 0);
 
-PRINT 'SE AGREG” LA PELICULA "HOMBRES DE NEGRO"'
+PRINT 'SE AGREG√ì LA PELICULA "HOMBRES DE NEGRO"'
 -- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ----------- Scarface -----------
@@ -1566,7 +1568,7 @@ VALUES ('Steven', 'Bauer', 11, '1956-12-02', 'https://resizing.flixster.com/-XZA
 
 -- Tabla: Peliculas
 INSERT INTO Peliculas (FechaEstreno, Titulo, MinutosDuracion, Bio)
-VALUES ('1984-02-09', 'Scarface', 170, 'Un inmigrante cubano de las c·rceles de Fidel Castro provoca un camino de destrucciÛn en su ascenso en el mundo de las drogas de Miami.');
+VALUES ('1984-02-09', 'Scarface', 170, 'Un inmigrante cubano de las c√°rceles de Fidel Castro provoca un camino de destrucci√≥n en su ascenso en el mundo de las drogas de Miami.');
 
 -- Tabla: Media
 INSERT INTO	Media (IdPelicula, MediaURL, IdTipo)
@@ -1614,10 +1616,10 @@ VALUES (102, 22, 0);
 INSERT INTO [Peliculas.Reparto] (IdReparto, IdPelicula, Protagonista)
 VALUES (103, 22, 0);
 
-PRINT 'SE AGREG” LA PELICULA "SCARFACE"'
+PRINT 'SE AGREG√ì LA PELICULA "SCARFACE"'
 -- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
------------ Piratas del Caribe: la maldiciÛn del Perla Negra -----------
+----------- Piratas del Caribe: la maldici√≥n del Perla Negra -----------
 
 -- Tabla:Reparto
 INSERT INTO Reparto (Nombre, Apellido, IdNacionalidad, FechaNacimiento, ImagenURL, Dirige)
@@ -1629,7 +1631,7 @@ VALUES ('Orlando', 'Bloom', 19, '1977-01-13', 'https://resizing.flixster.com/-XZ
 
 -- Tabla: Peliculas
 INSERT INTO Peliculas (FechaEstreno, Titulo, MinutosDuracion, Bio)
-VALUES ('2003-07-17', 'Piratas del Caribe: la maldiciÛn del Perla Negra', 143, 'El capit·n Barbossa le roba el barco al pirata Jack Sparrow y secuestra a Elizabeth, amiga de Will Turner. Barbossa y su tripulaciÛn son vÌctimas de un conjuro que los condena a vivir eternamente y a transformarse cada noche en esqueletos vivientes.');
+VALUES ('2003-07-17', 'Piratas del Caribe: la maldici√≥n del Perla Negra', 143, 'El capit√°n Barbossa le roba el barco al pirata Jack Sparrow y secuestra a Elizabeth, amiga de Will Turner. Barbossa y su tripulaci√≥n son v√≠ctimas de un conjuro que los condena a vivir eternamente y a transformarse cada noche en esqueletos vivientes.');
 
 -- Tabla: Media
 INSERT INTO	Media (IdPelicula, MediaURL, IdTipo)
@@ -1673,7 +1675,7 @@ VALUES (105, 23, 0);
 INSERT INTO [Peliculas.Reparto] (IdReparto, IdPelicula, Protagonista)
 VALUES (106, 23, 0);
 
-PRINT 'SE AGREG” LA PELICULA "PIRATAS DEL CARIBE: LA MALDICI”N DEL PERLA NEGRA"'
+PRINT 'SE AGREG√ì LA PELICULA "PIRATAS DEL CARIBE: LA MALDICI√ìN DEL PERLA NEGRA"'
 -- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ----------- Tiempo de Valientes -----------
@@ -1686,7 +1688,7 @@ VALUES ('Luis', 'Luque', 1, '1956-06-12', 'https://cdn.radionacional.com.ar/wp-c
 
 -- Tabla: Peliculas
 INSERT INTO Peliculas (FechaEstreno, Titulo, MinutosDuracion, Bio)
-VALUES ('2005-09-29', 'Tiempo de Valientes', 112, 'Sentenciado a servir a la comunidad, un psicoanalista acompaÒa a un policÌa en su recorrido.');
+VALUES ('2005-09-29', 'Tiempo de Valientes', 112, 'Sentenciado a servir a la comunidad, un psicoanalista acompa√±a a un polic√≠a en su recorrido.');
 
 -- Tabla: Media
 INSERT INTO	Media (IdPelicula, MediaURL, IdTipo)
@@ -1732,7 +1734,7 @@ VALUES (107, 24, 1);
 INSERT INTO [Peliculas.Reparto] (IdReparto, IdPelicula, Protagonista)
 VALUES (108, 24, 1);
 
-PRINT 'SE AGREG” LA PELICULA "TIEMPO DE VALIENTES"'
+PRINT 'SE AGREG√ì LA PELICULA "TIEMPO DE VALIENTES"'
 -- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ----------- Terminator -----------
@@ -1747,7 +1749,7 @@ VALUES ('Michael', 'Biehn', 11, '1956-07-31', 'https://resizing.flixster.com/-XZ
 
 -- Tabla: Peliculas
 INSERT INTO Peliculas (FechaEstreno, Titulo, MinutosDuracion, Bio)
-VALUES ('1985-04-18', 'Terminator', 108, 'Un asesino cibernÈtico del futuro es enviado a Los ¡ngeles, para matar a la mujer que procrear· a un lÌder.');
+VALUES ('1985-04-18', 'Terminator', 108, 'Un asesino cibern√©tico del futuro es enviado a Los √Ångeles, para matar a la mujer que procrear√° a un l√≠der.');
 
 -- Tabla: Media
 INSERT INTO	Media (IdPelicula, MediaURL, IdTipo)
@@ -1795,7 +1797,7 @@ VALUES (110, 25, 1);
 INSERT INTO [Peliculas.Reparto] (IdReparto, IdPelicula, Protagonista)
 VALUES (111, 25, 1);
 
-PRINT 'SE AGREG” LA PELICULA "TERMINATOR"'
+PRINT 'SE AGREG√ì LA PELICULA "TERMINATOR"'
 
 PRINT   ' '
 PRINT	'/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////'
