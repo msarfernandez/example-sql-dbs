@@ -1,6 +1,7 @@
 USE MaxiFlix_DB
 
 SET LANGUAGE Spanish;
+SET DATEFORMAT 'YMD';
 
 	-- Carga de Datos
 
